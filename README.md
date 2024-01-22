@@ -1,0 +1,3 @@
+# My config for neovim :)
+
+Still in progress...

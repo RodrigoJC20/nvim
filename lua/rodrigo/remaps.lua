@@ -21,9 +21,14 @@ vim.keymap.set("n", "<leader><leader>",
     end
 )
 
+-- Indenting
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", "<gv")
+
 -- Change word with Ctrl+c
 vim.keymap.set("n", "<C-c>", "<cmd>normal! ciw<cr>a")
 
 -- Compile and run C++ file
 vim.keymap.set("n", "<F5>", vim.cmd.NeoRunner)
 
+vim.keymap.set("i", "<C-Backspace>", "<Esc>ciw")
